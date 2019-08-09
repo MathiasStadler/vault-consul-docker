@@ -1,0 +1,6 @@
+[submodule "official-images/docker-consul"]
+	path = official-images/docker-consul
+	url = https://github.com/hashicorp/docker-consul.git
+[submodule "official-images/docker-vault"]
+	path = official-images/docker-vault
+	url = https://github.com/hashicorp/docker-vault.git
