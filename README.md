@@ -1,10 +1,25 @@
-# Managing Secrets with Vault and Consul
+# vault-consul-docker always with the latest official docker container
+
+## TL;DR
+
+```bash
+# git clone this repo
+git clone https://github.com/MathiasStadler/vault-consul-docker.git
+# git clone the sub repositories with official Dockerfile from hashicorp
+git submodule init
+# build images and start container
+docker-compose up -d --build
+```
+
+
+
+## Managing Secrets with Vault and Consul
 
 ## Want to learn how to build this?
 
 Check out the [post](https://testdriven.io/managing-secrets-with-vault-and-consul).
 
-## Want to use this project?
+## Want to use this project
 
 1. Fork/Clone
 

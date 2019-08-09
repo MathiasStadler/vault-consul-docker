@@ -4,7 +4,7 @@ services:
 
   vault:
     build:
-      context: ./vault
+      context: ./official-images/docker-vault
       dockerfile: Dockerfile
     ports:
       - 8200:8200
@@ -23,7 +23,7 @@ services:
 
   consul:
     build:
-      context: ./consul
+      context: ./official-images/docker-consul
       dockerfile: Dockerfile
     ports:
       - 8500:8500
@@ -34,7 +34,7 @@ services:
 
   consul-worker:
     build:
-      context: ./consul
+      context: ./official-images/docker-consul
       dockerfile: Dockerfile
     command: agent -server -join consul -config-file=/consul/config/config.json
     volumes:
